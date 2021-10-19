@@ -1,15 +1,16 @@
-# GraphSpeech
+# HF-RealtimeEVC
 
-__"GraphSpeech: Syntax-aware Graph Attention Network For Neural Speech Synthesis"__
+__"CONTINUOUS WAVELET TRANSFORM BASED HYBRID FILTERING FOR
+REAL-TIME EMOTIONAL VOICE CONVERSION"__
 
-Authors: Rui Liu, Berrak Sisman and Haizhou Li
+Authors: Zhaojie Luo, Rui Liu, Shuyun Tang, Jun Baba, Yuichiro Yoshikawa, Hiroshi Ishiguro
 
-This paper was submitted to ICASSP2021. 
+This paper was submitted to ICASSP2022. 
 
 ## Speech samples
 
 
-Speech samples are available at [demo page](https://ttslr.github.io/GraphSpeech/).
+Speech samples are available at [demo page](https://ZhaojieL.github.io/HF-RealtimeVC/).
 
 
 
