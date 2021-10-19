@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-  <title>GraphSpeech</title>
+  <title>HF-RealtimeEVC</title>
 </head>
 <style type="text/css">
   table {
@@ -50,8 +50,8 @@
         <div class="row align-items-center">
           <div class="col-md-12">
  
-            <h1><a class="text-light">GraphSpeech: Syntax-aware Graph Attention Network <br> For Neural Speech Synthesis</h1><br> 
-             <font size=5><span style="color:#000000"> Authors: Rui Liu, Berrak Sisman, Haizhou Li </font>  </a>   
+            <h1><a class="text-light">CONTINUOUS WAVELET TRANSFORM BASED HYBRID FILTERING FOR REAL-TIME EMOTIONAL VOICE CONVERSION</h1><br> 
+             <font size=5><span style="color:#000000"> Authors: Zhaojie Luo, Rui Liu, Shuyun Tang, Jun Baba, Yuichiro Yoshikawa, Hiroshi Ishiguro </font>  </a>   
             <p>
               <div class="row">
               </div>
@@ -67,7 +67,15 @@
       <div class="row" id="result">
         <div class="col-md-12">
         	<h5>Abstract:</h5> 
-        	Attention-based end-to-end text-to-speech synthesis (TTS) is superior to conventional statistical methods in many ways. Transformer-based TTS is one of such successful implementations. While Transformer TTS models the speech frame sequence well with a self-attention mechanism, it does not associate input text with output utterances from a syntactic point of view at sentence level. We propose a novel neural TTS model, denoted as <i>GraphSpeech</i>, that is formulated under graph neural network framework. <i>GraphSpeech</i> encodes explicitly the syntactic relation of input lexical tokens in a sentence, and incorporates such information to derive syntactically motivated character embeddings for TTS attention mechanism. Experiments show that <i>GraphSpeech</i> consistently outperforms the Transformer TTS baseline in terms of spectrum and prosody rendering of utterances. <br>
+        	Running emotional voice conversion (EVC) in real-time, using live input from a microphone, with low latency, while maintaining the quality of the converted voice remains an underexplored area. Some deep learning speaker VC methods attempt to read frames of speech in a streaming fashion, rather than complete speech sentences, to accelerate the real-time conversion. However, such methods deal only with
+short-term speech features, ignoring the long-term prosody
+features that are crucial in EVC. To address this issue, in
+this study, we propose a hybrid EVC framework that consists of short- and long-term filters to separately convert the
+prosody (F0) features of different temporal levels, ranging
+from micro-prosody to sentences, which are captured using
+the continuous wavelet transform. Experiments show that
+the proposed framework achieves competitive results for both
+similarity and naturalness in real-time conversion. <br>
 <br>
 <br>
           <div style="text-align: center; width: 1100px; border: green solid 1px;">
