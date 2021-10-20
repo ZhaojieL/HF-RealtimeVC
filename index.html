@@ -67,15 +67,15 @@
       <div class="row" id="result">
         <div class="col-md-12">
         	<h5>Abstract:</h5> 
-        	Running emotional voice conversion (EVC) in real-time, using live input from a microphone, with low latency, while maintaining the quality of the converted voice remains an underexplored area. Some deep learning speaker VC methods attempt to read frames of speech in a streaming fashion, rather than complete speech sentences, to accelerate the real-time conversion. However, such methods deal only with
-short-term speech features, ignoring the long-term prosody
-features that are crucial in EVC. To address this issue, in
-this study, we propose a hybrid EVC framework that consists of short- and long-term filters to separately convert the
-prosody (F0) features of different temporal levels, ranging
-from micro-prosody to sentences, which are captured using
-the continuous wavelet transform. Experiments show that
-the proposed framework achieves competitive results for both
-similarity and naturalness in real-time conversion. <br>
+        	Running emotional voice conversion (EVC) in real-time, using live input from a microphone, with low latency, 
+		while maintaining the quality of the converted voice remains an underexplored area. Some deep learning speaker 
+		VC methods attempt to read frames of speech in a streaming fashion, rather than complete speech sentences, 
+		to accelerate the real-time conversion. However, such methods deal only with short-term speech features, ignoring 
+		the long-term prosody features that are crucial in EVC. To address this issue, in this study, we propose a hybrid EVC 
+		framework that consists of short- and long-term filters to separately convert the prosody (F0) features of different 
+		temporal levels, ranging from micro-prosody to sentences, which are captured using the continuous wavelet transform. 
+		Experiments show that the proposed framework achieves competitive results for both similarity and naturalness in real-time conversion. 
+		<br>
 <br>
 <br>
           <div style="text-align: center; width: 1100px; border: green solid 1px;">
@@ -85,13 +85,8 @@ similarity and naturalness in real-time conversion. <br>
                     Fig. 1: Framework of proposed real-time emotional voice conversion.
                     
         
-          </div>
-
-
-			
-                  
-                   
-                     <br /><br />
+          </div> 
+		<br />
                      <h3>Speech Samples:</h3>
                      <br />
             
@@ -100,7 +95,8 @@ similarity and naturalness in real-time conversion. <br>
                   
                     <h6> (1) <b>Baseline </b>: As there are no comparable deep learning-based real-time EVC methods in the literature, we reimplemented the earliest DNN-based EVC model [1], with the streaming conversion method used real-time speaker VC tasks [2]. </h6>
                     <h6>(2) <b>Dual-SANs </b>: This is the non-real-time EVC method, adopting the dual supervised adversarial network, in which the CWT method was used to augment prosody (F0) features [3]. </h6>
-                    <h6>(3) <b>Proposed  </b>: This is the proposed real-time EVC using hybrid filtering for short-term and long-term features conversion, separately. </h6>  
+                    <h6>(3) <b>Proposed  </b>: This is the proposed real-time EVC using hybrid filtering for short-term and long-term features conversion, separately. For ablation study, S-o, L-o, and S+L represent using the short-term filter only, long-term filter only,
+and both of them, respectively. </h6>  
                      <br />
 	             <table class="table">
                       <thead>
@@ -119,7 +115,7 @@ similarity and naturalness in real-time conversion. <br>
                                     <td style="text-align: center; width: 100px;">  Source</th>
                                     <td style="text-align: center; width: 100px;">  Baseline</th>
                                     <td style="text-align: center; width: 100px;">  Dual-SANs</th>
-                                    <td style="text-align: center; width: 100px;">  Proposed</th>
+                                    <td style="text-align: center; width: 100px;">  Proposed (S+L)</th>
                                     <td style="text-align: center; width: 100px;">  Target</th>
                           
                                 </tr> 
@@ -254,6 +250,7 @@ similarity and naturalness in real-time conversion. <br>
                                     
                                     <td style="text-align: center; width: 100px;">  Source</th>
                                     <td style="text-align: center; width: 100px;">  S-o</th>
+			            <td style="text-align: center; width: 100px;">  L-o</th>
                                     <td style="text-align: center; width: 100px;">  S+L</th>
                                     <td style="text-align: center; width: 100px;">  Target</th>
                           
@@ -283,6 +280,12 @@ similarity and naturalness in real-time conversion. <br>
                                     </audio>
                                   </td>
                                    <td>
+			              <audio controls>
+                                      <source src="./samples/MOS/Seq2seq_WA1/Neutral_Angry_0013_000009.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                   <td>		   
                                    <audio controls>
                                       <source src="./samples/MOS/Reference/target/Neutral_Angry_0013_000009.wav"  type="audio/wav" />
                                       Your browser does not support the audio element.
@@ -303,6 +306,12 @@ similarity and naturalness in real-time conversion. <br>
                                   </td>
                                   <td>
                                     <audio controls>
+                                      <source src="./samples/MOS/StarGAN/Neutral_Happy_0013_000008.wav"  type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>    
+                                 <td>
+			           <audio controls>
                                       <source src="./samples/MOS/StarGAN/Neutral_Happy_0013_000008.wav"  type="audio/wav" />
                                       Your browser does not support the audio element.
                                     </audio>
@@ -339,6 +348,12 @@ similarity and naturalness in real-time conversion. <br>
                                     </audio>
                                   </td>
                                   <td>
+				   <audio controls>
+                                      <source src="./samples/MOS/CycleGAN/Neutral_Sad_0013_000005.wav"  type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  <td>
                                     <audio controls>
                                       <source src="./samples/MOS/Seq2seq_WA1/Neutral_Sad_0013_000005.wav" type="audio/wav" />
                                       Your browser does not support the audio element.
@@ -353,7 +368,7 @@ similarity and naturalness in real-time conversion. <br>
                       </tbody>                   
 
                     </table>
-
+ <br /><br />
 [1] Zhaojie Luo, Tetsuya Takiguchi, and Yasuo Ariki, “Emotional voice conversion using deep neural networks with mcc and f0 features,” in 2016 IEEE/ACIS 15th International Conference on Computer and Information Science (ICIS). IEEE, 2016, pp. 1–5.
 <p>
 [2] Tomoki Toda, Takashi Muramatsu, and Hideki Banno, “Implementation of computationally efficient real-time voice conversion,” in INTERSPEECH 2012, Portland, Oregon, USA, September 9-13, 2012. 2012, pp. 94–97, ISCA.
