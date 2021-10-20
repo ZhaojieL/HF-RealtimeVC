@@ -79,7 +79,7 @@ similarity and naturalness in real-time conversion. <br>
 <br>
 <br>
           <div style="text-align: center; width: 1100px; border: green solid 1px;">
-          	<img align="center" src="fig02vc.png"  width="950" height="400"  />
+          	<img align="center" src="fig02vc.png"  width="950" height="350"  />
  				<br>
         <br>
                     Fig. 1: Framework of proposed real-time emotional voice conversion.
@@ -94,14 +94,15 @@ similarity and naturalness in real-time conversion. <br>
                      <br /><br />
                      <h3>Speech Samples:</h3>
                      <br />
-                     <br />
-                    <!--  Speech  Naturalness Evaluation -->
+            
+                   
                      </thead> <b>Experimental Setup:</b><p>
                   
                     <h6> (1) <b>Baseline </b>: As there are no comparable deep learning-based real-time EVC methods in the literature, we reimplemented the earliest DNN-based EVC model [1], with the streaming conversion method used real-time speaker VC tasks [2]. </h6>
-                    <h6>(2) <b>Dual-SANs </b>: This is the non-real-time EVC method, adopting the dual supervised adversarial network, in which the CWT method was used to augment prosody (F0) features [3].. </h6>
+                    <h6>(2) <b>Dual-SANs </b>: This is the non-real-time EVC method, adopting the dual supervised adversarial network, in which the CWT method was used to augment prosody (F0) features [3]. </h6>
                     <h6>(3) <b>Proposed  </b>: This is the proposed real-time EVC using hybrid filtering for short-term and long-term features conversion, separately. </h6>  
-                    <table class="table">
+                     <br />
+	             <table class="table">
                       <thead>
                             <th colspan=5><h4>Speech Naturalness Evaluation</h4></th>
                         <tr>
@@ -231,134 +232,100 @@ similarity and naturalness in real-time conversion. <br>
                                       <source src="./samples/MOS/Reference/target/Neutral_Sad_0013_000006.wav"  type="audio/wav" />
                                       Your browser does not support the audio element.
                                     </audio>
-                                  </td>   </tr> 
-<!--  single sentence -->
-                                  <td>
-                                    <audio controls>
-                                      <source src="./samples/MOS/Reference/Neutral/Neutral_Sad_0013_000006.wav" type="audio/wav" />
-                                      Your browser does not support the audio element.
-                                    </audio>
-                                
-                                  </td>
-                                  <td>
-                                    <audio controls>
-                                      <source src="./samples/MOS/CycleGAN/Neutral_Sad_0013_000006.wav"  type="audio/wav" />
-                                      Your browser does not support the audio element.
-                                    </audio>
-                                  </td>
-                                  <td>
-                                    <audio controls>
-                                      <source src="./samples/MOS/StarGAN/Neutral_Sad_0013_000006.wav"  type="audio/wav" />
-                                      Your browser does not support the audio element.
-                                    </audio>
-                                  </td>    
-                                 <td>
-                                    <audio controls>
-                                      <source src="./samples/MOS/Seq2seq_WA1/Neutral_Sad_0013_000006.wav" type="audio/wav" />
-                                      Your browser does not support the audio element.
-                                    </audio>
-                                    </td>                  
-                                    <td>
-                                    <audio controls>
-                                      <source src="./samples/MOS/Reference/target/Neutral_Sad_0013_000006.wav"  type="audio/wav" />
-                                      Your browser does not support the audio element.
-                                    </audio>
-                                  </td>  </tr>
-                                    <!--  single sentence -->
                                   </td> 
                       </tbody>                   
 
                     </table>
 
-                                        <table class="table">
+
+<table class="table">
                       <thead>
-                            <th colspan=5><h4>Speech Quality Test</h4></th>
+			       <th colspan=5><h4>Emotion similarity evaluation (Ablation Study)</h4></th>
                         <tr>
              
-                         
+                      
                         </tr>
+
+                      <table style="height: 100px;" border="2" width="611">
                       <tbody>
                                 
                                 
                                 <tr>
-                                    <th></th>
-                                    <th style="text-align:center;">   S-o </th>
-                                    <th style="text-align:center;">   S+L </th>
-                              
-                              
+                                    
+                                    <td style="text-align: center; width: 100px;">  Source</th>
+                                    <td style="text-align: center; width: 100px;">  S-o</th>
+                                    <td style="text-align: center; width: 100px;">  S+L</th>
+                                    <td style="text-align: center; width: 100px;">  Target</th>
                           
-                                </tr>
-                                                                  </tr>
-                                   <th colspan=3><h8>(1) Neutral-to-Happy</h8></th>
-                               </tr>
-                                <!-- single sentence -->
-
-                               <td>
+                                </tr> 
+                                  <!--  single sentence -->
+                                                          <tr>
+             
+                            <th colspan=3><h8>(1) Neutral-to-Angry</h8></th>
+                        </tr>
+                                  <td>
                                     <audio controls>
-                                      <source src="./samples/MOS/Reference/Neutral/Neutral_Sad_0013_000005.wav" type="audio/wav" />
+                                      <source src="./samples/MOS/Reference/Neutral/Neutral_Angry_0013_000009.wav" type="audio/wav" />
                                       Your browser does not support the audio element.
                                     </audio>
                                 
                                   </td>
                                   <td>
                                     <audio controls>
-                                      <source src="./samples/MOS/CycleGAN/Neutral_Sad_0013_000005.wav"  type="audio/wav" />
+                                      <source src="./samples/MOS/CycleGAN/Neutral_Angry_0013_000009.wav"  type="audio/wav" />
                                       Your browser does not support the audio element.
                                     </audio>
                                   </td>
                                   <td>
                                     <audio controls>
-                                      <source src="./samples/MOS/StarGAN/Neutral_Sad_0013_000005.wav"  type="audio/wav" />
+                                      <source src="./samples/MOS/Seq2seq_WA1/Neutral_Angry_0013_000009.wav" type="audio/wav" />
                                       Your browser does not support the audio element.
                                     </audio>
-                                  </td>    
-                                 <td>
-                                    <audio controls>
-                                      <source src="./samples/MOS/Reference/target/Neutral_Sad_0013_000006.wav"  type="audio/wav" />
+                                  </td>
+                                   <td>
+                                   <audio controls>
+                                      <source src="./samples/MOS/Reference/target/Neutral_Angry_0013_000009.wav"  type="audio/wav" />
                                       Your browser does not support the audio element.
                                     </audio>
-                                  </td>   </tr> 
-                        
-                                   <th colspan=3><h8>(2) Neutral-to-Sad</h8></th>
-                               </tr>
-
-
-                                <!-- single sentence -->
-
-                                <td>
+                                  </td>                      
+                                  </tr>
+                                                          <tr>
+             
+                            <th colspan=3><h8>(2) Neutral-to-Happy</h8></th>
+                        </tr>
+  <!--  single sentence -->
+                                  <td>
                                     <audio controls>
-                                      <source src="./samples/MOS/Reference/Neutral/Neutral_Sad_0013_000005.wav" type="audio/wav" />
+                                      <source src="./samples/MOS/Reference/Neutral/Neutral_Happy_0013_000008.wav" type="audio/wav" />
                                       Your browser does not support the audio element.
                                     </audio>
                                 
                                   </td>
                                   <td>
                                     <audio controls>
-                                      <source src="./samples/MOS/CycleGAN/Neutral_Sad_0013_000005.wav"  type="audio/wav" />
-                                      Your browser does not support the audio element.
-                                    </audio>
-                                  </td>
-                                  <td>
-                                    <audio controls>
-                                      <source src="./samples/MOS/StarGAN/Neutral_Sad_0013_000005.wav"  type="audio/wav" />
+                                      <source src="./samples/MOS/StarGAN/Neutral_Happy_0013_000008.wav"  type="audio/wav" />
                                       Your browser does not support the audio element.
                                     </audio>
                                   </td>    
                                  <td>
                                     <audio controls>
-                                      <source src="./samples/MOS/Reference/target/Neutral_Sad_0013_000006.wav"  type="audio/wav" />
+                                      <source src="./samples/MOS/Seq2seq_WA1/Neutral_Happy_0013_000008.wav" type="audio/wav" />
                                       Your browser does not support the audio element.
                                     </audio>
-                                  </td>   
-                                  </tr> 
-                            
+                                  </td>                  
+                                  <td>
+                                    <audio controls>
+                                      <source src="./samples/MOS/Reference/target/Neutral_Happy_0013_000008.wav"  type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>  
+                                  </tr>
+ 
+                                  </td>    </tr>
                                    <th colspan=3><h8>(3) Neutral-to-Sad</h8></th>
-                               </tr>
-                                <!-- single sentence -->
-
-                                <tr>
-                                  <th scope="row">    </th>
-                                     <td>
+                                                                                             </tr>
+  <!--  single sentence -->
+                                  <td>
                                     <audio controls>
                                       <source src="./samples/MOS/Reference/Neutral/Neutral_Sad_0013_000005.wav" type="audio/wav" />
                                       Your browser does not support the audio element.
@@ -373,232 +340,24 @@ similarity and naturalness in real-time conversion. <br>
                                   </td>
                                   <td>
                                     <audio controls>
-                                      <source src="./samples/MOS/StarGAN/Neutral_Sad_0013_000005.wav"  type="audio/wav" />
+                                      <source src="./samples/MOS/Seq2seq_WA1/Neutral_Sad_0013_000005.wav" type="audio/wav" />
                                       Your browser does not support the audio element.
                                     </audio>
-                                  </td>    
-                                 <td>
+                                  </td>
+                                   <td>
                                     <audio controls>
                                       <source src="./samples/MOS/Reference/target/Neutral_Sad_0013_000006.wav"  type="audio/wav" />
                                       Your browser does not support the audio element.
                                     </audio>
-                                  </td>   
-
-                      </tbody>
-                       
+                                  </td> 
+                      </tbody>                   
 
                     </table>
 
 [1] Zhaojie Luo, Tetsuya Takiguchi, and Yasuo Ariki, “Emotional voice conversion using deep neural networks with mcc and f0 features,” in 2016 IEEE/ACIS 15th International Conference on Computer and Information Science (ICIS). IEEE, 2016, pp. 1–5.
 <p>
 [2] Tomoki Toda, Takashi Muramatsu, and Hideki Banno, “Implementation of computationally efficient real-time voice conversion,” in INTERSPEECH 2012, Portland, Oregon, USA, September 9-13, 2012. 2012, pp. 94–97, ISCA.
-<p>
-[3] Zhaojie Luo, Jinhui Chen, Tetsuya Takiguchi, and Yasuo Ariki, “Emotional voice conversion using dual supervised adversarial networks with continuous wavelet transform f0 features,” IEEE/ACM Transactions on Audio, Speech, and Language Processing, vol. 27, no. 10, pp. 1535–1548, 2019.
-
-
-
-
-                  </div>
-                 
-        </div>
-      </div>
-      <hr>
-      <div class="row" id="ref">
-        <div class="col">
-          <!--<h2>References</h2>
-          
-         -->
-        </div>
-      </div>
-      <hr>
-      <!-- <div class="row" id="contact">
-          <div class="col">
-            <h2>Contact</h2>
-            <div></div>
-          </div>
-        </div> -->
-    </div>
-  </main>
-  <footer class="bg-secondary text-light mt-4 pt-3 pb-2 ">
-    <div class="container">
-      <p class="text-center">
-        
-      </p>
-    </div>
-  </footer>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-</body>
-
-</html>
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-                    <--  Naturalness Evaluation -->
-                    <table class="table">
-                      
-                      <tbody>
-                                
-                                
-                                <tr>
-                                    <th></th>
-                                     
-                                    <th style="text-align:center;">   Transformer TTS</th>
-                                    <th style="text-align:center;">   GraphSpeech </th>
-                                    
-                                </tr>
-                                 
-                              
-
-                                <tr>
-                                  <th colspan=4 align="center">[1] “We conduct objective evaluations to assess the performance of our proposed framework .”</th>
-                                </tr>
-
-                                 <tr>
-                                  <th scope="row">     </th>
-                                 <td>
-                                    <audio controls>
-                                      <source src="samples/TT/1.wav" type="audio/wav" />
-                                      Your browser does not support the audio element.
-                                    </audio>
-                                  </td>
-                                  <td>
-                                    <audio controls>
-                                      <source src="samples/GS/1.wav" type="audio/wav" />
-                                      Your browser does not support the audio element.
-                                    </audio>
-                                  </td>
-                                  </tr>
-
-
-
-                               <tr>
-                                  <th colspan=4 align="center">[2] “The main contributions of this paper are listed as follows .”</th>
-                                </tr>
-
-                                  <tr>
-                                  <th scope="row">   </th>
-                                 <td>
-                                    <audio controls>
-                                      <source src="samples/TT/2.wav" type="audio/wav" />
-                                      Your browser does not support the audio element.
-                                    </audio>
-                                  </td>
-                                  <td>
-                                    <audio controls>
-                                      <source src="samples/GS/2.wav" type="audio/wav" />
-                                      Your browser does not support the audio element.
-                                    </audio>
-                                  </td>
-                                  </tr>
-
-
-                               <tr>
-                                  <th colspan=4 align="center">[3] “Graphical structure plays an important role in natural language processing .”</th>
-                                </tr>
-
-                                  <tr>
-                                  <th scope="row">   </th>
-                                 <td>
-                                    <audio controls>
-                                      <source src="samples/TT/3.wav" type="audio/wav" />
-                                      Your browser does not support the audio element.
-                                    </audio>
-                                  </td>
-                                  <td>
-                                    <audio controls>
-                                      <source src="samples/GS/3.wav" type="audio/wav" />
-                                      Your browser does not support the audio element.
-                                    </audio>
-                                  </td>
-                                  </tr>
-
-
-                               <tr>
-                                  <th colspan=4 align="center">[4] “The blue words denote the dependency relation between two nodes .”</th>
-                                </tr>
-
-
-                                  <tr>
-                                  <th scope="row">   </th>
-                                 <td>
-                                    <audio controls>
-                                      <source src="samples/TT/4.wav" type="audio/wav" />
-                                      Your browser does not support the audio element.
-                                    </audio>
-                                  </td>
-                                  <td>
-                                    <audio controls>
-                                      <source src="samples/GS/4.wav" type="audio/wav" />
-                                      Your browser does not support the audio element.
-                                    </audio>
-                                  </td>
-                                  </tr>
-
-
-
-
-                               <tr>
-                                  <th colspan=4 align="center">[5] “We then encode them into vector representations .”</th>
-                                </tr>
-
-
-
-                                  <tr>
-                                  <th scope="row">  </th>
-                                 <td>
-                                    <audio controls>
-                                      <source src="samples/TT/5.wav" type="audio/wav" />
-                                      Your browser does not support the audio element.
-                                    </audio>
-                                  </td>
-                                  <td>
-                                    <audio controls>
-                                      <source src="samples/GS/5.wav" type="audio/wav" />
-                                      Your browser does not support the audio element.
-                                    </audio>
-                                  </td>
-                                  </tr>
-
-                                  
-
-                                
- 
-
-                      </tbody>
-                    </table>
- 
-
-                  </div>
-                 
-     
-        
+[3] Zhaojie Luo, Jinhui Chen, Tetsuya Takiguchi, and Yasuo Ariki, “Emotional voice conversion using dual supervised adversarial networks with continuous wavelet transform f0 features,” IEEE/ACM Transactions on Audio, Speech, and Language Processing, vol. 27, no. 10, pp. 1535–1548, 2019. 
         
         </div>
       </div>
