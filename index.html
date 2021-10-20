@@ -95,7 +95,372 @@ similarity and naturalness in real-time conversion. <br>
                      <h3>Speech Samples:</h3>
                      <br />
                      <br />
-                    <!--  Naturalness Evaluation -->
+                    <!--  Speech  Naturalness Evaluation -->
+                     </thead> <b>Experimental Setup:</b><p>
+                  
+                    <h6> (1) <b>Baseline </b>: As there are no comparable deep learning-based real-time EVC methods in the literature, we reimplemented the earliest DNN-based EVC model [1], with the streaming conversion method used real-time speaker VC tasks [2]. </h6>
+                    <h6>(2) <b>Dual-SANs </b>: This is the non-real-time EVC method, adopting the dual supervised adversarial network, in which the CWT method was used to augment prosody (F0) features [3].. </h6>
+                    <h6>(3) <b>Proposed  </b>: This is the proposed real-time EVC using hybrid filtering for short-term and long-term features conversion, separately. </h6>  
+                    <table class="table">
+                      <thead>
+                            <th colspan=5><h4>Speech Naturalness Evaluation</h4></th>
+                        <tr>
+             
+                      
+                        </tr>
+
+                      <table style="height: 100px;" border="2" width="611">
+                      <tbody>
+                                
+                                
+                                <tr>
+                                    
+                                    <td style="text-align: center; width: 100px;">  Source</th>
+                                    <td style="text-align: center; width: 100px;">  Baseline</th>
+                                    <td style="text-align: center; width: 100px;">  Dual-SANs</th>
+                                    <td style="text-align: center; width: 100px;">  Proposed</th>
+                                    <td style="text-align: center; width: 100px;">  Target</th>
+                          
+                                </tr> 
+                                  <!--  single sentence -->
+                                                          <tr>
+             
+                            <th colspan=3><h8>(1) Neutral-to-Angry</h8></th>
+                        </tr>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./samples/MOS/Reference/Neutral/Neutral_Angry_0013_000009.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./samples/MOS/CycleGAN/Neutral_Angry_0013_000009.wav"  type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./samples/MOS/StarGAN/Neutral_Angry_0013_000009.wav"  type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>    
+                                 <td>
+                                    <audio controls>
+                                      <source src="./samples/MOS/Seq2seq_WA1/Neutral_Angry_0013_000009.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                   <td>
+                                   <audio controls>
+                                      <source src="./samples/MOS/Reference/target/Neutral_Angry_0013_000009.wav"  type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>                      
+                                  </tr>
+                                                          <tr>
+             
+                            <th colspan=3><h8>(2) Neutral-to-Happy</h8></th>
+                        </tr>
+  <!--  single sentence -->
+                                  <td>
+                                    <audio controls>
+                                      <source src="./samples/MOS/Reference/Neutral/Neutral_Happy_0013_000008.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./samples/MOS/CycleGAN/Neutral_Happy_0013_000008.wav"  type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./samples/MOS/StarGAN/Neutral_Happy_0013_000008.wav"  type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>    
+                                 <td>
+                                    <audio controls>
+                                      <source src="./samples/MOS/Seq2seq_WA1/Neutral_Happy_0013_000008.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>                  
+                                  <td>
+                                    <audio controls>
+                                      <source src="./samples/MOS/Reference/target/Neutral_Happy_0013_000008.wav"  type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>  
+                                  </tr>
+ 
+                                  </td>    </tr>
+                                   <th colspan=3><h8>(3) Neutral-to-Sad</h8></th>
+                                                                                             </tr>
+  <!--  single sentence -->
+                                  <td>
+                                    <audio controls>
+                                      <source src="./samples/MOS/Reference/Neutral/Neutral_Sad_0013_000005.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./samples/MOS/CycleGAN/Neutral_Sad_0013_000005.wav"  type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./samples/MOS/StarGAN/Neutral_Sad_0013_000005.wav"  type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>    
+                                 <td>
+                                    <audio controls>
+                                      <source src="./samples/MOS/Seq2seq_WA1/Neutral_Sad_0013_000005.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                   <td>
+                                    <audio controls>
+                                      <source src="./samples/MOS/Reference/target/Neutral_Sad_0013_000006.wav"  type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>   </tr> 
+<!--  single sentence -->
+                                  <td>
+                                    <audio controls>
+                                      <source src="./samples/MOS/Reference/Neutral/Neutral_Sad_0013_000006.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./samples/MOS/CycleGAN/Neutral_Sad_0013_000006.wav"  type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./samples/MOS/StarGAN/Neutral_Sad_0013_000006.wav"  type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>    
+                                 <td>
+                                    <audio controls>
+                                      <source src="./samples/MOS/Seq2seq_WA1/Neutral_Sad_0013_000006.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                    </td>                  
+                                    <td>
+                                    <audio controls>
+                                      <source src="./samples/MOS/Reference/target/Neutral_Sad_0013_000006.wav"  type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>  </tr>
+                                    <!--  single sentence -->
+                                  </td> 
+                      </tbody>                   
+
+                    </table>
+
+                                        <table class="table">
+                      <thead>
+                            <th colspan=5><h4>Speech Quality Test</h4></th>
+                        <tr>
+             
+                         
+                        </tr>
+                      <tbody>
+                                
+                                
+                                <tr>
+                                    <th></th>
+                                    <th style="text-align:center;">   S-o </th>
+                                    <th style="text-align:center;">   S+L </th>
+                              
+                              
+                          
+                                </tr>
+                                                                  </tr>
+                                   <th colspan=3><h8>(1) Neutral-to-Happy</h8></th>
+                               </tr>
+                                <!-- single sentence -->
+
+                               <td>
+                                    <audio controls>
+                                      <source src="./samples/MOS/Reference/Neutral/Neutral_Sad_0013_000005.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./samples/MOS/CycleGAN/Neutral_Sad_0013_000005.wav"  type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./samples/MOS/StarGAN/Neutral_Sad_0013_000005.wav"  type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>    
+                                 <td>
+                                    <audio controls>
+                                      <source src="./samples/MOS/Reference/target/Neutral_Sad_0013_000006.wav"  type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>   </tr> 
+                        
+                                   <th colspan=3><h8>(2) Neutral-to-Sad</h8></th>
+                               </tr>
+
+
+                                <!-- single sentence -->
+
+                                <td>
+                                    <audio controls>
+                                      <source src="./samples/MOS/Reference/Neutral/Neutral_Sad_0013_000005.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./samples/MOS/CycleGAN/Neutral_Sad_0013_000005.wav"  type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./samples/MOS/StarGAN/Neutral_Sad_0013_000005.wav"  type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>    
+                                 <td>
+                                    <audio controls>
+                                      <source src="./samples/MOS/Reference/target/Neutral_Sad_0013_000006.wav"  type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>   
+                                  </tr> 
+                            
+                                   <th colspan=3><h8>(3) Neutral-to-Sad</h8></th>
+                               </tr>
+                                <!-- single sentence -->
+
+                                <tr>
+                                  <th scope="row">    </th>
+                                     <td>
+                                    <audio controls>
+                                      <source src="./samples/MOS/Reference/Neutral/Neutral_Sad_0013_000005.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./samples/MOS/CycleGAN/Neutral_Sad_0013_000005.wav"  type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./samples/MOS/StarGAN/Neutral_Sad_0013_000005.wav"  type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>    
+                                 <td>
+                                    <audio controls>
+                                      <source src="./samples/MOS/Reference/target/Neutral_Sad_0013_000006.wav"  type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>   
+
+                      </tbody>
+                       
+
+                    </table>
+
+[1] Zhaojie Luo, Tetsuya Takiguchi, and Yasuo Ariki, “Emotional voice conversion using deep neural networks with mcc and f0 features,” in 2016 IEEE/ACIS 15th International Conference on Computer and Information Science (ICIS). IEEE, 2016, pp. 1–5.
+<p>
+[2] Tomoki Toda, Takashi Muramatsu, and Hideki Banno, “Implementation of computationally efficient real-time voice conversion,” in INTERSPEECH 2012, Portland, Oregon, USA, September 9-13, 2012. 2012, pp. 94–97, ISCA.
+<p>
+[3] Zhaojie Luo, Jinhui Chen, Tetsuya Takiguchi, and Yasuo Ariki, “Emotional voice conversion using dual supervised adversarial networks with continuous wavelet transform f0 features,” IEEE/ACM Transactions on Audio, Speech, and Language Processing, vol. 27, no. 10, pp. 1535–1548, 2019.
+
+
+
+
+                  </div>
+                 
+        </div>
+      </div>
+      <hr>
+      <div class="row" id="ref">
+        <div class="col">
+          <!--<h2>References</h2>
+          
+         -->
+        </div>
+      </div>
+      <hr>
+      <!-- <div class="row" id="contact">
+          <div class="col">
+            <h2>Contact</h2>
+            <div></div>
+          </div>
+        </div> -->
+    </div>
+  </main>
+  <footer class="bg-secondary text-light mt-4 pt-3 pb-2 ">
+    <div class="container">
+      <p class="text-center">
+        
+      </p>
+    </div>
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+                    <--  Naturalness Evaluation -->
                     <table class="table">
                       
                       <tbody>
