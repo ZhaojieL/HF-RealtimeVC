@@ -50,7 +50,7 @@
         <div class="row align-items-center">
           <div class="col-md-12">
  
-            <h1><a class="text-light">CONTINUOUS WAVELET TRANSFORM BASED HYBRID FILTERING FOR REAL-TIME EMOTIONAL VOICE CONVERSION</h1><br> 
+            <h1><a class="text-light">Hybrid filtering for Real-Time Emotional Voice Conversion</h1><br> 
              <font size=5><span style="color:#000000"> Authors: Zhaojie Luo, Rui Liu, Shuyun Tang, Jun Baba, Yuichiro Yoshikawa, Hiroshi Ishiguro </font>  </a>   
             <p>
               <div class="row">
@@ -94,7 +94,7 @@
                      </thead> <b>Experimental Setup:</b><p>
                   
                     <h6> (1) <b>Baseline </b>: As there are no comparable deep learning-based real-time EVC methods in the literature, we reimplemented the earliest DNN-based EVC model [1], with the streaming conversion method used real-time speaker VC tasks [2]. </h6>
-                    <h6>(2) <b>Dual-SANs </b>: This is the non-real-time EVC method, adopting the dual supervised adversarial network, in which the CWT method was used to augment prosody (F0) features [3]. </h6>
+                    <h6>(2) <b> </b>: This is the newest non-real-time EVC method, adopting the Source-Filter Networks to decouple Speaker-independent Emotions for Voice Conversion. [3]. </h6>
                     <h6>(3) <b>Proposed  </b>: This is the proposed real-time EVC using hybrid filtering for short-term and long-term features conversion, separately. For ablation study, S-o represents using the short-term filter only, S+L represents using both the short-term and long-term filters. </h6>  
                      <br />
 	             <table class="table">
@@ -113,7 +113,7 @@
                                     
                                     <td style="text-align: center; width: 100px;">  Source</th>
                                     <td style="text-align: center; width: 100px;">  Baseline</th>
-                                    <td style="text-align: center; width: 100px;">  Dual-SANs</th>
+                                    <td style="text-align: center; width: 100px;">  SFEVC</th>
                                     <td style="text-align: center; width: 100px;">  Proposed (S+L)</th>
                                     <td style="text-align: center; width: 100px;">  Target</th>
                           
@@ -360,7 +360,7 @@
           <br/>
           [2] Tomoki Toda, Takashi Muramatsu, and Hideki Banno, “Implementation of computationally efficient real-time voice conversion,” in INTERSPEECH 2012, Portland, Oregon, USA, September 9-13, 2012. 2012, pp. 94–97, ISCA.
           <br/>
-          [3] Zhaojie Luo, Jinhui Chen, Tetsuya Takiguchi, and Yasuo Ariki, “Emotional voice conversion using dual supervised adversarial networks with continuous wavelet transform f0 features,” IEEE/ACM Transactions on Audio, Speech, and Language Processing, vol. 27, no. 10, pp. 1535–1548, 2019. 
+          [3] , “Decoupling speaker-independent emotions for voice conversion via source-filter networks,”  IEEE/ACM Transactions on Audio, Speech, and Language Processing (2022). 
           <br>
         
            </div>
