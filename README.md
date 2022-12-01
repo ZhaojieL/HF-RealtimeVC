@@ -1,11 +1,10 @@
 # HF-RealtimeEVC
 
-__"CONTINUOUS WAVELET TRANSFORM BASED HYBRID FILTERING FOR
-REAL-TIME EMOTIONAL VOICE CONVERSION"__
+__"Hybrid filtering for Real-Time Emotional Voice Conversion"__
 
-Authors: Zhaojie Luo, Rui Liu, Shuyun Tang, Jun Baba, Yuichiro Yoshikawa, Hiroshi Ishiguro
+Authors: Zhaojie Luo, Rui Liu, Sheng Li, Shuyun Tang, Jun Baba, Yuichiro Yoshikawa, Hiroshi Ishiguro
 
-This paper was submitted to ICASSP2022. 
+This paper was submitted to ICASSP2023. 
 
 ## Speech samples
 
