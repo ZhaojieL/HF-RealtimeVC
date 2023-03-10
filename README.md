@@ -2,9 +2,9 @@
 
 __"Hybrid filtering for Real-Time Emotional Voice Conversion"__
 
-Authors: Zhaojie Luo, Rui Liu, Sheng Li, Shuyun Tang, Jun Baba, Yuichiro Yoshikawa, Hiroshi Ishiguro
+Authors: Anonymous
 
-This paper was submitted to ICASSP2023. 
+This paper was submitted to INTERSPEECH2023. 
 
 ## Speech samples
 
