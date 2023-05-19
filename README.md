@@ -4,7 +4,7 @@ __"Hybrid filtering for Real-Time Emotional Voice Conversion"__
 
 Authors: Anonymous
 
-This paper was submitted to INTERSPEECH2023. 
+This paper was submitted to ICMI2023. 
 
 ## Speech samples
 
